@@ -1,0 +1,69 @@
+---
+layout: default
+title: Home Page
+---
+<div class="wrapper">
+
+    <div class="uk-section uk-margin-top">
+        <div class=" uk-container">
+
+                <div class="uk-card-hover uk-card uk-card-default uk-card-hover uk-card-body">
+
+                    <form>
+                        <fieldset class="uk-fieldset">
+
+                            <div class="uk-flex">
+            
+                                <div class="uk-width-expand">
+                                    <legend class="uk-legend">Шифр Цезаря</legend>
+                                </div>
+                            </div>
+
+                            <div class="uk-child-width-1-2@s uk-flex uk-flex-middle">
+
+
+                                <div class="uk-form-controls">
+                                    <label><input id="radioEncrypt" class="uk-radio" type="radio" name="radio1"
+                                            value="Зашифровать"> Зашифровать</label><br>
+                                    <label><input id="radioDecrypt" class="uk-radio" type="radio" name="radio1"
+                                            value="Расшифровать"> Расшифровать</label>
+                                </div>
+
+
+                                <div class="uk-margin">
+                                    <input id="inputStep" class="uk-input" type="number" placeholder="Введите сдвиг"
+                                        value="">
+                                </div>
+                            </div>
+
+
+                            <div class="uk-margin">
+                                <textarea id="textUser" class="uk-textarea" rows="5" placeholder="Введите текст"
+                                    value=""></textarea>
+                            </div>
+
+                            <div class="uk-margin">
+                                <textarea id="textEncrypt" class="uk-textarea" rows="5"
+                                    placeholder="Результат"></textarea>
+                            </div>
+                            <p uk-margin>
+
+                                <!--           <button id="btnEncrypt" class="uk-button uk-button-primary" type="button">Зашифровать</button> -->
+                                <button id="btnClean" class="uk-button uk-button-danger btn__clean"
+                                    type="button">Очистить</button>
+
+                            </p>
+                            <p class="msg"></p>
+
+                        </fieldset>
+                    </form>
+                </div>
+
+
+
+
+
+
+        </div>
+    </div>
+</div>

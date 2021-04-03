@@ -1,0 +1,9 @@
+
+
+$maxWidth: 1920;
+
+@mixin help-text($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 639;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 639px) / #{$maxWidth}));
+}
